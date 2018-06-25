@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HK_regression_suite_HKWEB_Firefox" verbose="1" >  
+	<parameter name= "flavour" value="web"></parameter>
+  	<parameter name = "browserOrDevice" value = "firefox"/>
+  	
+  	<listeners>
+        <listener class-name="com.healthkart.hkAutomation.util.AnnotationTransformer"/>
+	</listeners>
+
+<!--   <test name="Login Test from Login Popup"  >
+    <classes>
+      <class name="com.healthkart.hkAutomation.regression.HK_TestLoginFromPopup"/> 
+    </classes>
+  </test>  
+    -->
+  <test name="Login Test from Guest Page"  >  
+    <classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestLoginFromGuestPage"/> 
+    </classes>
+  </test>   
+ 
+  <test name="Login Test from Accounts Page"  >    
+    <classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestLoginFromAccountsPage"/>
+    </classes>
+  </test> 
+  
+  <test name="Signup Test with OTP and password"  >  
+    <classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestSignupMobileOtpPswd"/>
+    </classes>    
+  </test>
+   
+  <test name="Test Healthkart category pages"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestVisitCatagoryPages"/>
+    </classes>
+  </test>
+  
+  <test name="Test Healthkart Home Page with Search Results"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestVerifyHomePage"/>
+    </classes>
+  </test>
+  
+  <test name="Test Verify PDP Checks"  >
+  	<classes>
+   		<class name="com.healthkart.hkAutomation.regression.HK_TestVerifyPDPChecks"/>
+   	</classes>
+  </test>
+ 
+ <test name="Order placement with variant freebie - COD"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlaceCODWithLoginPopup"/>
+    </classes>
+  </test> 
+ 
+  <test name="Order placement with prompt offer applied - COD"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestPromptOrderPlaceCODLoginPopup"/>
+    </classes>
+  </test>
+  
+  <test name="Order placement with BXGY offer applied - COD"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestBXGYOrderPlaceCODLoginPopup"/>
+    </classes>
+  </test>
+  
+  <test name="Order placement with Coupon applied - COD"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestCouponOrderPlaceCODLoginPopup"/>
+    </classes>
+  </test>
+  
+  <test name="Order placement with HK CASH Full pay - FREE CHECKOUT"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlaceHKCashLoginPopup"/>
+    </classes>
+  </test>
+  
+  <test name="Order placement with Credit card payment - PREPAID ORDER"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlaceCreditCardLoginPopup"/>
+    </classes>
+  </test> 
+ 
+  <test name="Order placement with Debit card payment - PREPAID ORDER"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlaceDebitCardLoginPopup"/>
+    </classes>
+  </test>
+  
+  <test name="Order placement with variant freebie Partial HKCASH - COD"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlacePartialHKCashCODLoginPopup"/>
+    </classes>
+  </test>
+<!--      
+  <test name="Order placement with Paytm wallet payment - PREPAID ORDER"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlacePaytmWalletLoginPopup"/>
+    </classes>
+  </test> -->
+</suite>

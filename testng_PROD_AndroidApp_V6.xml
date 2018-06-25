@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HK_regression_suite_PROD_Android_App_V6">
+	<parameter name= "flavour" value="androidApp"></parameter>
+  	<parameter name = "browserOrDevice" value = "Samsung-J5"/>
+  	
+  	<listeners>
+        <listener class-name="com.healthkart.hkAutomation.util.AnnotationTransformer"/>
+	</listeners>	
+	
+	<test name="HK_Test_Order_Place_COD_Android">
+		<classes>
+			<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Order_Place_COD_Android"/>
+        </classes>
+    </test> 
+    
+    <test name="HK_TestLoginFromAccountsPage_Android">
+    	<classes>
+			<class name="com.healthkart.hkMobileAutomation.regression.HK_TestLoginFromAccountsPage_Android"/>
+      	</classes>
+	</test>
+	
+	<test name="HK_TestVisitCatagoryPagesAndroid">    
+		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestVisitCatagoryPagesAndroid"/>
+    	</classes>
+  	</test>
+  	
+    <test name="HK_TestVerifyHomePage_AndroidApp">
+  		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestVerifyHomePage_AndroidApp"/>
+      	</classes>
+    </test>
+
+	<test name="HK_TestVerifyPDPChecks_Android">
+    	<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestVerifyPDPChecks_Android"/>
+      	</classes> 
+    </test>    
+   
+  	<test name="HK_Test_Guest_Login_Android">
+    	<classes>
+			<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Guest_Login_Android"/>
+    	</classes>
+   	</test>
+
+	<test name="HK_Test_Login_Android">
+		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Login_Android"/>
+    	</classes>
+	</test>
+   
+</suite>

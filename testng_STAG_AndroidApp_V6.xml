@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HK_regression_suite_STAG_Android_App_V6">
+	<parameter name= "flavour" value="androidApp"></parameter>
+  	<parameter name = "browserOrDevice" value = "Samsung-J5"/>
+  	
+	<listeners>
+        <listener class-name="com.healthkart.hkAutomation.util.AnnotationTransformer"/>
+	</listeners>
+
+	<test name="HK_Test_Order_Place_COD_Android">
+		<classes>
+			<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Order_Place_COD_Android"/>
+        </classes>
+   </test>  
+   
+   <test name="HK_Test_Order_Place_CreditCard_Android">
+    <classes>
+      <class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Order_Place_CreditCard_Android"/>
+      </classes>
+   </test>
+      
+  <test name="HK_Test_Order_Place_DebitCard_Android">
+    <classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Order_Place_DebitCard_Android"/>
+    </classes>
+   </test>
+      
+	<test name="HK_TestLoginFromAccountsPage_Android">
+    	<classes>
+			<class name="com.healthkart.hkMobileAutomation.regression.HK_TestLoginFromAccountsPage_Android"/>
+      	</classes>
+	</test> 
+      
+    <test name="HK_TestPromptOrderPlaceCODLoginPopupAndroid">
+    	<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestPromptOrderPlaceCODLoginPopupAndroid"/>
+      	</classes>
+    </test>
+     
+   	<test name="HK_TestSignupMobileOtpPswd">
+  		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestSignupMobileOtpPswd"/>
+      	</classes>
+    </test>
+
+    <test name="HK_TestVisitCatagoryPagesAndroid">    
+		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestVisitCatagoryPagesAndroid"/>
+    	</classes>
+  	</test>   
+ 
+  	<test name="HK_TestBXGYOrderPlaceCODLoginPopupAndroid">
+  		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestBXGYOrderPlaceCODLoginPopupAndroid"/>
+      	</classes>
+	</test> 
+  
+	<test name="HK_TestOrderPlaceHKCashLoginPopup_Android">
+  		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestOrderPlaceHKCashLoginPopup_Android"/>
+      	</classes>
+	</test>
+
+	<test name="HK_TestCouponOrderPlaceCODLoginPopup_Android">
+		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestCouponOrderPlaceCODLoginPopup_Android"/>
+    	</classes>
+    </test>
+      
+    <test name="HK_Test_Wallets_Android">
+  		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Wallets_Android"/>
+      	</classes>
+    </test>
+          <test name="HK_TestVerifyHomePage_AndroidApp">
+  		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestVerifyHomePage_AndroidApp"/>
+      	</classes>
+    </test> 
+    
+         <test name="HK_Test_Order_Place_Partial_HKCash_COD_Login_Popup_AndroidApp">
+    <classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Order_Place_Partial_HKCash_COD_Login_Popup_AndroidApp"/>
+      	</classes> 
+    </test>
+    
+   <test name="HK_TestVerifyPDPChecks_Android">
+    <classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_TestVerifyPDPChecks_Android"/>
+      	</classes> 
+    </test>   
+  	<test name="HK_Test_Guest_Login_Android">
+    	<classes>
+			<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Guest_Login_Android"/>
+    	</classes>
+   	</test>
+   
+	<test name="HK_Test_Login_Android">
+		<classes>
+      		<class name="com.healthkart.hkMobileAutomation.regression.HK_Test_Login_Android"/>
+    	</classes>
+	</test>   
+	
+</suite> 

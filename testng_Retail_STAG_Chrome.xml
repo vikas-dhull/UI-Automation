@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HK_regression_suite_RETAIL_WEB_Chrome" verbose="1" >  
+	<parameter name= "flavour" value="RetailWeb"></parameter>
+  	<parameter name = "browserOrDevice" value = "chrome"/>
+  	
+  	<listeners>
+        <listener class-name="com.healthkart.hkAutomation.util.AnnotationTransformer"/>
+	</listeners>
+
+
+  <test name="Retail POS Test Order Place With Counter Cash"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Place_Order_Counter_Cash"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Test Order Place and Return Checkin"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Order_Retrun"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Test Order Place With Coupon Offer And Counter Cash"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Place_Order_Coupon_Offer_Counter_Cash"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Test Order Place With Freebie And Counter Cash"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Place_Order_Freebie_Counter_Cash"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Test Order Place With Coupon Offer, HKCASH And Split Payment"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Place_Order_Offer_Split_Payment"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Test Order Place With Partial HKCASH"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Place_Order_Partial_HKCASH"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Test Order Place With Prompt Offer And Counter Cash"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Place_Order_Prompt_Offer_Counter_Cash"/> 
+    </classes>
+  </test>  
+  
+  <test name="Retail POS Signup For Existing User on API"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Signup_Existing_On_API"/> 
+    </classes>
+  </test>
+  
+  <test name="Retail POS Signup And Sync User on API"  >
+    <classes>
+      <class name="com.healthkart.hkRetailAutomation.regression.POS_Test_Signup_Sync_From_POS_To_API"/> 
+    </classes>
+  </test>
+  	
+  <test name="Test Order Place From HK Omni-Channel COD for Delivery By SM"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="COD"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel"/>
+    </classes>
+  </test> 
+  
+  <test name="OMNI CHANNEL ORDER PLACE COD, DELEVERED BY STORE MANAGER"  >
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.Omni_Channel_Order_COD_Checkout_DeliveryBySM"/>
+    </classes>
+  </test>  
+   	
+  <test name="Test Order Place From HK Omni-Channel COD for Store Pickup"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="COD"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel"/>
+    </classes>
+  </test> 
+  
+  <test name="OMNI CHANNEL ORDER PLACE COD, CUSTOMER STORE PICKUP"  >
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.Omni_Channel_Order_COD_Checkout_StorePickUp"/>
+    </classes>
+  </test>    
+   	
+ <test name="Test Order Place From HK Omni-Channel COD for Process Back To HK"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="COD"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel"/>
+    </classes>
+  </test> 
+  
+  <test name="OMNI CHANNEL ORDER PLACE COD, PROCESS BACK TO HK"  >
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.Omni_Channel_Order_COD_Checkout_ProcessBackToHK"/>
+    </classes>
+  </test>
+   	
+ <test name="Test Order Place From HK Omni-Channel Prepaid for Store Pickup"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="Credit Card"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel"/>
+    </classes>
+  </test> 
+  
+  <test name="OMNI CHANNEL ORDER PLACE PREPAID, ACCEPTED AS STORE PICKUP"  >
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.Omni_Channel_Order_Prepaid_Accepted_StorePickUp"/>
+    </classes>
+  </test>
+  
+   <test name="Test Order Place From HK Omni-Channel Prepaid for order rejected on POS"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="Credit Card"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel"/>
+    </classes>
+  </test> 
+  
+  <test name="OMNI CHANNEL ORDER PLACE PREPAID, REJECTED AT STORE"  >
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.Omni_Channel_Order_Prepaid_Rejected"/>
+    </classes>
+  </test>
+  
+  <test name="Test Order Place From HK Omni-Channel Prepaid"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="Credit Card"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel"/>
+    </classes>
+  </test> 
+  
+  <test name="OMNI CHANNEL ORDER, ACCEPTED AT STORE BUT CANCELLED BY USER"  >
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.Omni_Channel_Order_Prepaid_Accepted_Cancelled_By_Customer"/>
+    </classes>
+  </test> 
+  
+  <test name="Test Order Place PL + NPL Omni-Channel Prepaid for order NOT routed to Retail Store"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="COD"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Place_Order_For_Omni_Channel_NPL"/>
+    </classes>
+  </test> 
+<!--  
+  <test name="Test Order Place Assume Login Through Store Managers COD"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="COD"></parameter>
+   	<parameter name= "customer" value="Existing"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Order_Retail_Manager_Assume_login"/>
+    </classes>
+  </test> -->
+  
+  <test name="Test Order Place Assume Login Through Store Managers PAY AT STORE"  >
+   	<parameter name= "flavour" value="web"></parameter>
+   	<parameter name= "payment" value="PAY AT STORE"></parameter>
+   	<parameter name= "customer" value="New"></parameter>
+    <classes>    	
+    	<class name="com.healthkart.hkRetailAutomation.regression.HK_Test_Order_Retail_Manager_Assume_login"/>
+    </classes>
+  </test>
+    
+</suite>

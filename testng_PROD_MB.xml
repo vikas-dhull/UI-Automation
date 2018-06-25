@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HK_regression_suite_MBWeb_Chrome" verbose="1" >  
+	<parameter name= "flavour" value="MBWeb"></parameter>
+  	<parameter name = "browserOrDevice" value = "chrome"/>
+  	
+  	<listeners>
+        <listener class-name="com.healthkart.hkAutomation.util.AnnotationTransformer"/>
+	</listeners>
+	
+  <test name="MB_TestLoginHomePage"  >
+  	<classes>
+    	<class name="com.mb.webAutomation.regression.MB_TestLoginHomePage"/>
+    </classes>
+  </test>
+   
+   <test name="MB_TestGuestLogin"  >
+  	<classes>
+    	<class name="com.mb.webAutomation.regression.MB_TestGuestLogin"/>
+    </classes>
+  </test>
+ 
+  
+ <!--  <test name="MB_Test_Signup"  >
+  	<classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_Signup"/>
+    </classes>
+  </test> -->
+  
+  <test name="MB_Test_OrderPlace_COD"  >
+  	<classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_OrderPlace_COD"/>
+    </classes>
+  </test>
+  <!-- 
+    <test name="MB_Test_OrderPlace_CC"  >
+  	<classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_OrderPlace_CC"/>
+    </classes>
+  </test>
+    -->
+  <test name="MB_Test_NetBanking"  >
+  	<classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_NetBanking"/>
+    </classes>
+  </test>
+  
+  <test name="MB_Test_Wallets">
+  <classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_Wallets"/>
+    </classes>
+  </test>
+  
+  <test name="MB_Test_HomePage">
+  <classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_HomePage"/>
+    </classes>
+  </test>
+   
+  <test name="MB_Test_Coupon_Order">
+  <classes>
+    	<class name="com.mb.webAutomation.regression.MB_Test_Coupon_Order"/>
+    </classes>
+  </test>
+  <!--  
+  <test name="Order placement with Paytm wallet payment - PREPAID ORDER"  >
+  	<classes>
+    	<class name="com.healthkart.hkAutomation.regression.HK_TestOrderPlacePaytmWalletLoginPopup"/>
+    </classes>
+  </test> -->
+</suite>

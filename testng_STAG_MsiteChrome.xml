@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HK_regression_suite_MSITE_WEB">
+	<parameter name= "flavour" value="msite"></parameter>
+  	<parameter name = "browserOrDevice" value = "chrome"/>
+  	
+  <listeners>
+       <listener class-name="com.healthkart.hkAutomation.util.AnnotationTransformer"/>
+  </listeners> 
+  
+  <test name="AndroidMsite: Order placement with variant freebie - COD">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_COD_With_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Test Healthkart category pages">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Visit_Cateory_Pages_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Test Verify PDP Checks"  >
+  	<classes>
+   		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Verify_PDP_Checks_AndroidMsite"/>
+   	</classes>
+  </test>
+  	   
+  <test name="AndroidMsite: Login Test from Login Popup">    
+    <classes>
+      	<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Login_Popup_AndroidMsite"/>
+    </classes>
+  </test>
+
+  <test name="AndroidMsite: Login Test from Accounts Page">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Login_Accounts_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Login Test from Guest Page">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Login_Guest_AndroidMsite"/>
+	</classes>
+  </test>
+   
+  <test name="AndroidMsite: Test Healthkart Home Page with Search Results">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Verify_Home_Page_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Signup Test with OTP and password">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_SignUp_Popup_AndroidMsite"/>
+	</classes>
+  </test>  
+  
+  <test name="AndroidMsite: Order placement with cart merge COD">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Cart_Merge_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Order placement with prompt offer applied - COD">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Prompt_COD_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+ 
+  <test name="AndroidMsite: Order placement with BXGY offer applied - COD">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_BxGy_COD_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Order placement with Coupon applied - COD">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Coupon_COD_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test> 
+  
+  <test name="AndroidMsite: Order placement with Credit card payment - PREPAID ORDER">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Credit_Card_With_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+  
+  <test name="AndroidMsite: Order placement with Debit card payment - PREPAID ORDER">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Debit_Card_With_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test> 
+  
+  <test name="AndroidMsite: Order placement with HK CASH Full pay - FREE CHECKOUT">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Full_HKCash_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+
+  <test name="AndroidMsite: Order placement with partial HK CASH pay - COD">
+  	<classes>
+		<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Order_Place_Partial_HKCash_COD_Login_Popup_AndroidMsite"/>
+	</classes>
+  </test>
+  
+   <test name="HK_Test_Login_LeftPanel_AndroidMsite"  >
+  	<classes>
+    	<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Login_LeftPanel_AndroidMsite"/>
+    </classes>
+  </test>
+  
+  <test name="HK_Test_ExpressCheckout_AndroidMsite"  >
+  	<classes>
+    	<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_ExpressCheckout_AndroidMsite"/>
+    </classes>
+  </test>
+  
+ <!--   <test name="HK_Test_Wishlist_AndroidMsite"  >
+  	<classes>
+    	<class name="com.healthkart.hkMsiteAutomation.regression.HK_Test_Wishlist_AndroidMsite"/>
+    </classes>
+  </test> -->
+   
+</suite>
